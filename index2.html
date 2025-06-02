@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Wars Simulator Installation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for better readability and spacing */
+        body {
+            font-size: 2em; /* Base text size */
+            background-color: #A3A3A3; /* Light grey background for the body */
+        }
+        .container {
+            max-width: 800px;
+            background-color: #D3D3D3; /* Ensure the content area remains white */
+        }
+        img {
+            max-width: 100%; /* Ensure images are responsive */
+            height: auto;
+            border-radius: 1.5rem; /* Rounded corners */
+        }
+        th, td {
+            padding: 1rem; /* Add some padding to table cells */
+            text-align: center; /* Center align content in cells */
+        }
+        table {
+            width: 100%; /* Make table take full width of container */
+            border-collapse: collapse; /* Remove space between borders */
+            background-color: #AA7742; /* Yellow ochre background */
+        }
+        .image-title {
+            margin-bottom: 0.5rem; /* Space between title and image */
+            font-weight: bold;
+            font-size: 2em; /* Doubled size for the step text */
+        }
+        .step-description {
+            margin-top: 0.5rem; /* Space between title and description */
+            font-size: 1.2em; /* Same size as original text (2em from body * 0.5em = 1em, effectively the original base size of 1em from when it was not doubled) */
+        }
+        /* New style for Installation Steps */
+        th {
+            font-size: 1.3em; /* 30% bigger than the base 1em (which is 2em from body * 0.65 for the 1.3em result) */
+            color: blue;
+        }
+        .clickable-row {
+            cursor: pointer; /* Indicate that the row is clickable */
+        }
+    </style>
+</head>
+<body class="p-6">
+    <div class="container mx-auto p-8 rounded-lg shadow-md">
+        <h1 class="text-3xl font-bold text-center mb-8">How to Install Hero Wars Simulator</h1>
+
+        <table class="mx-auto">
+            <thead>
+                <tr>
+                    <th>Installation Steps</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="clickable-row" data-link="chrome://extensions">
+                    <td>
+                        <div class="image-title">Step 1: Open Extensions</div>
+                        <div class="step-description">You need to follow these steps in order to access the settings. <br>
+                        Google Chrome Reference Browser <br>
+					   Firefox does not work
+						</div>
+                        <img src="IMG/1Extension.jpg" alt="Step 1: Open Extensions">
+                    </td>
+                </tr>
+                <tr class="clickable-row" data-link="chrome://extensions">
+                    <td>
+                        <div class="image-title">Step 2: Enable Developer Mode</div>
+                        <div class="step-description">You need to follow these steps in order to access the settings. <br>
+                        You may then need to close and reopen your browser for the changes to take effect  </div>
+                        <img src="IMG/2Devmode.jpg" alt="Step 2: Enable Developer Mode">
+                    </td>
+                </tr>
+                <tr class="clickable-row" data-link="https://www.tampermonkey.net/">
+                    <td>
+                        <div class="image-title">Step 3: Install HeroWarsSimulator</div>
+                        <div class="step-description"> go on Chrome store
+                        <br> and download hero wars simulator
+						<br> click here to open the link
+						</div>
+                        <img src="IMG/3chromestore.jpg" alt="Step 3: Install Tampermonkey">
+                    </td>
+                </tr>
+                 <tr class="clickable-row" data-link="https://chromewebstore.google.com/detail/hero-wars-simulator/oolajlfdlkcekemoilmmhkajgneokggb?hl=en">
+                    <td>
+                        <div class="image-title">Step 4: keep only HWS</div>
+                        <div class="step-description">if you have other scripts
+						<br> please disable temporary them
+						<br> when you use Hero Wars Simulator
+						</div>
+                        <img src="IMG/4Tampermonkey.jpg" alt="Step 4: Go to Greasy Fork">
+                    </td>
+                </tr>
+                 <tr class="clickable-row" >
+                    <td>
+                        <div class="image-title">Step 5: Hero Wars Simulator Installed</div>
+                        <div class="step-description">You should see it
+						<br> opening the game www.hero-wars.com
+						</div>
+                        <img src="IMG/5HwHon.jpg" alt="Step 5: Hero Wars Simulator Installed">
+						</div>
+                    </td>
+                </tr>
+				  <tr class="clickable-row" >
+                    <td>
+                        <div class="image-title">Step 6: pin Hero Wars Simulator</div>
+                        <div class="step-description">You should add extension
+						<br> opening the extension menu on the corner
+						
+						</div>
+                        <img src="IMG/6Favourite.jpg" alt="Step 6: Favourite">
+                        <div class="step-description">then click on the
+						<br> extension icon.
+						<img src="IMG/7clickhere.jpg" alt="Step 6: Favourite">
+						<br> you will see this menu
+						<img src="IMG/8simulate.jpg" alt="Step 6: Favourite">
+						<br> continue on part 2...
+
+						</div>
+                    </td>
+                </tr>
+				
+				
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const rows = document.querySelectorAll('.clickable-row');
+            rows.forEach(row => {
+                row.addEventListener('click', function() {
+                    const link = this.dataset.link;
+                    if (link) {
+                        window.open(link, '_blank');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
