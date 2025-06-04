@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>히어로즈 워 시뮬레이터 설치</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for better readability and spacing */
+        body {
+            font-size: 2em; /* Base text size */
+            background-color: #A3A3A3; /* Light grey background for the body */
+        }
+        .container {
+            max-width: 800px;
+            background-color: #D3D3D3; /* Ensure the content area remains white */
+        }
+        img {
+            max-width: 100%; /* Ensure images are responsive */
+            height: auto;
+            border-radius: 1.5rem; /* Rounded corners */
+        }
+        th, td {
+            padding: 1rem; /* Add some padding to table cells */
+            text-align: center; /* Center align content in cells */
+        }
+        table {
+            width: 100%; /* Make table take full width of container */
+            border-collapse: collapse; /* Remove space between borders */
+            background-color: #AA7742; /* Yellow ochre background */
+        }
+        .image-title {
+            margin-bottom: 0.5rem; /* Space between title and image */
+            font-weight: bold;
+            font-size: 2em; /* Doubled size for the step text */
+        }
+        .step-description {
+            margin-top: 0.5rem; /* Space between title and description */
+            font-size: 1.2em; /* Same size as original text (2em from body * 0.5em = 1em, effectively the original base size of 1em from when it was not doubled) */
+        }
+        /* New style for Installation Steps */
+        th {
+            font-size: 1.3em; /* 30% bigger than the base 1em (which is 2em from body * 0.65 for the 1.3em result) */
+            color: blue;
+        }
+        .clickable-row {
+            cursor: pointer; /* Indicate that the row is clickable */
+        }
+    </style>
+</head>
+<body class="p-6">
+    <div class="container mx-auto p-8 rounded-lg shadow-md">
+        <h1 class="text-3xl font-bold text-center mb-8">히어로즈 워 시뮬레이터 설치 방법</h1>
+
+        <table class="mx-auto">
+            <thead>
+                <tr>
+                    <th>설치 단계</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="clickable-row" data-link="chrome://extensions">
+                    <td>
+                        <div class="image-title">1단계: 확장 프로그램 열기</div>
+                        <div class="step-description">설정에 접근하려면 다음 단계를 따라야 합니다. <br>
+                        Google Chrome 권장 브라우저 <br>
+					   Firefox는 작동하지 않습니다
+						</div>
+                        <img src="IMG/1Extension.jpg" alt="1단계: 확장 프로그램 열기">
+                    </td>
+                </tr>
+                <tr class="clickable-row" data-link="chrome://extensions">
+                    <td>
+                        <div class="image-title">2단계: 개발자 모드 활성화</div>
+                        <div class="step-description">설정에 접근하려면 다음 단계를 따라야 합니다. <br>
+                        변경 사항을 적용하려면 브라우저를 닫았다가 다시 열어야 할 수 있습니다  </div>
+                        <img src="IMG/2Devmode.jpg" alt="2단계: 개발자 모드 활성화">
+                    </td>
+                </tr>
+                <tr class="clickable-row" data-link="https://www.tampermonkey.net/">
+                    <td>
+                        <div class="image-title">3단계: 히어로즈 워 시뮬레이터 설치</div>
+                        <div class="step-description"> Chrome 스토어로 이동하여
+                        <br> 히어로즈 워 시뮬레이터를 다운로드하세요
+						<br> 링크를 열려면 여기를 클릭하세요
+						</div>
+                        <img src="IMG/3chromestore.jpg" alt="3단계: Tampermonkey 설치">
+                    </td>
+                </tr>
+                 <tr class="clickable-row" data-link="https://chromewebstore.google.com/detail/hero-wars-simulator/oolajlfdlkcekemoilmmhkajgneokggb?hl=en">
+                    <td>
+                        <div class="image-title">4단계: HWS만 유지</div>
+                        <div class="step-description">다른 스크립트가 있는 경우
+						<br> 히어로즈 워 시뮬레이터를 사용할 때
+						<br> 일시적으로 비활성화해주세요
+						</div>
+                        <img src="IMG/4Tampermonkey.jpg" alt="4단계: Greasy Fork로 이동">
+                    </td>
+                </tr>
+                 <tr class="clickable-row" >
+                    <td>
+                        <div class="image-title">5단계: 히어로즈 워 시뮬레이터 설치 완료</div>
+                        <div class="step-description">www.hero-wars.com 게임을 열면
+						<br> 확인할 수 있습니다
+						</div>
+                        <img src="IMG/5HwHon.jpg" alt="5단계: 히어로즈 워 시뮬레이터 설치 완료">
+						</div>
+                    </td>
+                </tr>
+				  <tr class="clickable-row" >
+                    <td>
+                        <div class="image-title">6단계: 히어로즈 워 시뮬레이터 고정</div>
+                        <div class="step-description">확장 프로그램을 추가해야 합니다
+						<br> 모서리에 있는 확장 프로그램 메뉴를 열어서
+						
+						</div>
+                        <img src="IMG/6Favourite.jpg" alt="6단계: 즐겨찾기">
+                        <div class="step-description">그런 다음
+						<br> 확장 프로그램 아이콘을 클릭하세요.
+						<img src="IMG/7clickhere.jpg" alt="6단계: 즐겨찾기">
+						<br> 이 메뉴가 보일 것입니다
+						<img src="IMG/8simulate.jpg" alt="6단계: 즐겨찾기">
+						<br> 파트 2로 계속...
+
+						</div>
+                    </td>
+                </tr>
+				
+				
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const rows = document.querySelectorAll('.clickable-row');
+            rows.forEach(row => {
+                row.addEventListener('click', function() {
+                    const link = this.dataset.link;
+                    if (link) {
+                        window.open(link, '_blank');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

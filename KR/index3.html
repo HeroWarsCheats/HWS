@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>히어로 워즈 - 보스 전투 시뮬레이션</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for better readability and spacing */
+        body {
+            font-size: 2em; /* Base text size */
+            background-color: #A3A3A3; /* Light grey background for the body */
+        }
+        .container {
+            max-width: 800px;
+            background-color: #D3D3D3; /* Ensure the content area remains white */
+        }
+        img {
+            max-width: 100%; /* Ensure images are responsive */
+            height: auto;
+            border-radius: 1.5rem; /* Rounded corners */
+        }
+        th, td {
+            padding: 1rem; /* Add some padding to table cells */
+            text-align: center; /* Center align content in cells */
+        }
+        table {
+            width: 100%; /* Make table take full width of container */
+            border-collapse: collapse; /* Remove space between borders */
+            background-color: #AA7742; /* Yellow ochre background */
+        }
+        .image-title {
+            margin-bottom: 0.5rem; /* Space between title and image */
+            font-weight: bold;
+            font-size: 2em; /* Doubled size for the step text */
+        }
+        .step-description {
+            margin-top: 0.5rem; /* Space between title and description */
+            font-size: 1.2em; /* Same size as original text (2em from body * 0.5em = 1em, effectively the original base size of 1em from when it was not doubled) */
+        }
+        /* New style for Installation Steps */
+        th {
+            font-size: 1.3em; /* 30% bigger than the base 1em (which is 2em from body * 0.65 for the 1.3em result) */
+            color: blue;
+        }
+        .clickable-row {
+            cursor: pointer; /* Indicate that the row is clickable */
+        }
+    </style>
+</head>
+<body class="p-6">
+    <div class="container mx-auto p-8 rounded-lg shadow-md">
+        <h1 class="text-3xl font-bold text-center mb-8">보스 전투 시뮬레이션 방법</h1>
+
+        <table class="mx-auto">
+            <thead>
+                <tr>
+                    <th>시뮬레이션 단계</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="clickable-row" data-link="chrome://extensions">
+                    <td>
+                        <div class="image-title">1단계: 히어로즈 워 시뮬레이터 열기</div>
+                        <div class="step-description">시뮬레이션 전투로 이동해야 합니다 <br>
+                         <br>
+					   
+						</div>
+                        <img src="IMG/8simulate.jpg" alt="1단계: 확장 프로그램 열기">
+                    </td>
+                </tr>
+                <tr class="clickable-row" data-link="chrome://extensions">
+                    <td>
+                        <div class="image-title">2단계: 길드 레이드</div>
+                        <div class="step-description">테스트하고 싶은 모드로 이동해야 합니다. <br>
+                        <img src="IMG/9guildraid.jpg" alt="2단계: 레이드">
+                    </td>
+                </tr>
+                <tr class="clickable-row">
+                    <td>
+                        <div class="image-title">3단계: 플레이어 선택</div>
+                        <div class="step-description"> 이름으로
+                        <br>또는 게임 ID로
+						<br> 둘 다 작동합니다
+						</div>
+                        <img src="IMG/10selectpla.jpg" alt="3단계: 플레이어 선택">
+                    </td>
+                </tr>
+                 <tr class="clickable-row" >
+                    <td>
+                        <div class="image-title">4단계: 팀 선택</div>
+                        <div class="step-description">사용하고 싶은 영웅과
+						<br> 펫을 선택하세요
+						<br> 수정할 수도 있습니다
+						<img src="IMG/11selecther.jpg" alt="4단계">
+						<br> 그런 다음 선택을 확인하세요
+                        <img src="IMG/12selectteam.jpg" alt="4단계">
+							</div>
+                    </td>
+                </tr>
+                 <tr class="clickable-row" >
+                    <td>
+                        <div class="image-title">5단계: 보스 선택</div>
+                        <div class="step-description">보스와
+						<br> 보스 레벨을 선택해야 합니다
+						</div>
+                        <img src="IMG/13selectboss.jpg" alt="5단계:">
+						</div>
+                    </td>
+                </tr>
+				  <tr class="clickable-row" >
+                    <td>
+                        <div class="image-title">6단계: 버프 선택 및 전투 시작</div>
+                        <div class="step-description">올바른 버프를 선택해야 합니다
+						<img src="IMG/14selectbuffs.jpg" alt="6단계 ">
+						<br> 그런 다음 수동 전투를 시작할 수 있습니다
+						<img src="IMG/15setupbatt.jpg" alt="6단계 ">
+						</div>
+                        
+                        <div class="step-description">게임이 열려 있다면
+						<br> 수동 전투가 시작될 것입니다
+						<img src="IMG/16batt.jpg" alt="6단계 ">
+						<br> 전투가 끝나면 점수를 볼 수 있습니다
+						<img src="IMG/17score.jpg" alt="6단계 ">
+						<br> 지금까지는 여기까지입니다...
+
+						</div>
+                    </td>
+                </tr>
+				
+				
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const rows = document.querySelectorAll('.clickable-row');
+            rows.forEach(row => {
+                row.addEventListener('click', function() {
+                    const link = this.dataset.link;
+                    if (link) {
+                        window.open(link, '_blank');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
