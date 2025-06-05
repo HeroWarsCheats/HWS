@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ヒーローウォーズシミュレーターのインストール</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for better readability and spacing */
+        body {
+            font-size: 2em; /* Base text size */
+            background-color: #A3A3A3; /* Light grey background for the body */
+        }
+        .container {
+            max-width: 800px;
+            background-color: #D3D3D3; /* Ensure the content area remains white */
+        }
+        img {
+            max-width: 100%; /* Ensure images are responsive */
+            height: auto;
+            border-radius: 1.5rem; /* Rounded corners */
+        }
+        th, td {
+            padding: 1rem; /* Add some padding to table cells */
+            text-align: center; /* Center align content in cells */
+        }
+        table {
+            width: 100%; /* Make table take full width of container */
+            border-collapse: collapse; /* Remove space between borders */
+            background-color: #AA7742; /* Yellow ochre background */
+        }
+        .image-title {
+            margin-bottom: 0.5rem; /* Space between title and image */
+            font-weight: bold;
+            font-size: 2em; /* Doubled size for the step text */
+        }
+        .step-description {
+            margin-top: 0.5rem; /* Space between title and description */
+            font-size: 1.2em; /* Same size as original text (2em from body * 0.5em = 1em, effectively the original base size of 1em from when it was not doubled) */
+        }
+        /* New style for Installation Steps */
+        th {
+            font-size: 1.3em; /* 30% bigger than the base 1em (which is 2em from body * 0.65 for the 1.3em result) */
+            color: blue;
+        }
+        .clickable-row {
+            cursor: pointer; /* Indicate that the row is clickable */
+        }
+    </style>
+</head>
+<body class="p-6">
+    <div class="container mx-auto p-8 rounded-lg shadow-md">
+        <h1 class="text-3xl font-bold text-center mb-8">ヒーローウォーズシミュレーターのインストール方法</h1>
+
+        <table class="mx-auto">
+            <thead>
+                <tr>
+                    <th>インストール手順</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="clickable-row" data-link="chrome://extensions">
+                    <td>
+                        <div class="image-title">ステップ1: 拡張機能を開く</div>
+                        <div class="step-description">設定にアクセスするには、これらの手順に従う必要があります。<br>
+                        Google Chrome リファレンスブラウザ<br>
+					   Firefoxは動作しません
+						</div>
+                        <img src="IMG/1Extension.jpg" alt="ステップ1: 拡張機能を開く">
+                    </td>
+                </tr>
+                <tr class="clickable-row" data-link="chrome://extensions">
+                    <td>
+                        <div class="image-title">ステップ2: 開発者モードを有効にする</div>
+                        <div class="step-description">設定にアクセスするには、これらの手順に従う必要があります。<br>
+                        変更を有効にするには、ブラウザを閉じて再度開く必要がある場合があります。</div>
+                        <img src="IMG/2Devmode.jpg" alt="ステップ2: 開発者モードを有効にする">
+                    </td>
+                </tr>
+                <tr class="clickable-row" data-link="https://www.tampermonkey.net/">
+                    <td>
+                        <div class="image-title">ステップ3: ヒーローウォーズシミュレーターをインストールする</div>
+                        <div class="step-description">Chromeストアにアクセスし<br>
+                        ヒーローウォーズシミュレーターをダウンロードしてください<br>
+						リンクを開くにはここをクリックしてください
+						</div>
+                        <img src="IMG/3chromestore.jpg" alt="ステップ3: Tampermonkeyをインストールする">
+                    </td>
+                </tr>
+                 <tr class="clickable-row" data-link="https://chromewebstore.google.com/detail/hero-wars-simulator/oolajlfdlkcekemoilmmhkajgneokggb?hl=en">
+                    <td>
+                        <div class="image-title">ステップ4: HWSのみを残す</div>
+                        <div class="step-description">他のスクリプトがある場合は<br>
+						ヒーローウォーズシミュレーターを使用する際は<br>
+						一時的に無効にしてください
+						</div>
+                        <img src="IMG/4Tampermonkey.jpg" alt="ステップ4: Greasy Forkへ">
+                    </td>
+                </tr>
+                 <tr class="clickable-row" >
+                    <td>
+                        <div class="image-title">ステップ5: ヒーローウォーズシミュレーターがインストールされました</div>
+                        <div class="step-description">ゲームを開くと表示されるはずです<br>
+						www.hero-wars.com
+						</div>
+                        <img src="IMG/5HwHon.jpg" alt="ステップ5: ヒーローウォーズシミュレーターがインストールされました">
+						</div>
+                    </td>
+                </tr>
+				  <tr class="clickable-row" >
+                    <td>
+                        <div class="image-title">ステップ6: ヒーローウォーズシミュレーターをピン留めする</div>
+                        <div class="step-description">拡張機能を追加する必要があります<br>
+						右上の拡張機能メニューを開いてください
+						
+						</div>
+                        <img src="IMG/6Favourite.jpg" alt="ステップ6: お気に入り">
+                        <div class="step-description">次に<br>
+						拡張機能アイコンをクリックしてください。
+						<img src="IMG/7clickhere.jpg" alt="ステップ6: お気に入り">
+						<br>このメニューが表示されます
+						<img src="IMG/8simulate.jpg" alt="ステップ6: お気に入り">
+						<br>パート2に続きます...
+
+						</div>
+                    </td>
+                </tr>
+				
+				
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const rows = document.querySelectorAll('.clickable-row');
+            rows.forEach(row => {
+                row.addEventListener('click', function() {
+                    const link = this.dataset.link;
+                    if (link) {
+                        window.open(link, '_blank');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
