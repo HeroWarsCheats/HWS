@@ -1,0 +1,108 @@
+{
+  "globalTitle": "HWS - Miglioramento di Asgard",
+  "globalHeading": "HWS - Miglioramento di Asgard",
+  "globalTableHeading": "Scopriamo come migliorare Asgard",
+  "bodyBgColor": "#6b6b6b",
+  "containerBgColor": "#e9d3b1",
+  "tableBgColor": "#90b158",
+  "mainHeadingColor": "#000000",
+  "tableHeadingColor": "#5e1700",
+  "sectionTitleColor": "#000000",
+  "descriptionColor": "#000000",
+  "modalWidth": "400px",
+  "modalHeight": "600px",
+  "headingFontFamily": "Brush Script MT, cursive",
+  "descriptionFontFamily": "Arial, sans-serif",
+  "mainHeadingSize": 55,
+  "tableHeadingSize": 55,
+  "sectionTitleSize": 52,
+  "descriptionSize": 32,
+  "headingBold": true,
+  "headingItalic": true,
+  "descriptionBold": false,
+  "descriptionItalic": false,
+  "titleAlignment": "center",
+  "descriptionAlignment": "center",
+  "imageAlignment": "center",
+  "availableImages": [
+    "",
+    "1.jpg",
+    "2.jpg",
+    "3.jpg",
+    "4.jpg",
+    "5.jpg",
+    "6.jpg",
+    "7.jpg",
+    "8.jpg",
+    "1.png",
+    "2.png",
+    "3.png",
+    "4.png",
+    "5.png"
+  ],
+  "steps": [
+    {
+      "title": "Entriamo in Hero wars simulator",
+      "description": "Entriamo in Hero wars simulator",
+      "image": "1.jpg",
+      "link": "",
+      "linkConfirm": true
+    },
+    {
+      "title": "Troveremo la voce \" settings \"",
+      "description": "Nella colonna a sinistra<br>sarà li che dovremo andare",
+      "image": "2.jpg",
+      "link": "",
+      "linkConfirm": true
+    },
+    {
+      "title": "dovremmo già trovarci nella sezione \" General Settings \"",
+      "description": "lì potremo abilitare i due bottoni dell'ottimizzatore di danni di Osh",
+      "image": "3.jpg",
+      "link": "",
+      "linkConfirm": true
+    },
+    {
+      "title": "Andiamo nel gioco",
+      "description": "nella sezione del raid di gilda<br><br>Possiamo premere Ctrl+Alt+A per arrivare prima<br>",
+      "image": "4.jpg",
+      "link": "",
+      "linkConfirm": true
+    },
+    {
+      "title": "Selezioniamo normalmente i nostri eroi",
+      "description": "ed iniziamo la battaglia",
+      "image": "5.jpg",
+      "link": "",
+      "linkConfirm": true
+    },
+    {
+      "title": "Ptima della battaglia apparirà un menù",
+      "description": "potremo decidere quanti crediti spendere e quale sarà il limite massimo di tentativi da utilizzare.<br><br>ATTENZIONE ! il limite massimo dipende anche dal computer. <br>i migliori computer arrivano a 150-200 tentativi.",
+      "image": "6.jpg",
+      "link": "",
+      "linkConfirm": true
+    },
+    {
+      "title": "in alto a sinistra",
+      "description": "vedremo il punteggio che potremmo fare con un combattimento completamente automatico<br><br>Attenzione a non sprecare crediti !!<br><br>Puoi anche iniziare la battaglia in modalità manuale e decidere poi il risultato migliore.<br><br>La modalità manuale toglierà tempo al ricalcolo.",
+      "image": "7.jpg",
+      "link": "",
+      "linkConfirm": true
+    },
+    {
+      "title": "Durante la battaglia potrai vedere",
+      "description": "il tempo rimanente per il ricalcolo.<br>1- il danno che faresti con la tua battaglia manuale ( fino a quando non premi \" skip battle \"<br>2 - il punteggio che avresti con una battaglia automatica<br>3 - il miglior risultato ottenuto con l'ottimizzazione<br>4 - il numero di tentativi che sono stati fatti",
+      "image": "8.jpg",
+      "link": "",
+      "linkConfirm": true
+    },
+    {
+      "title": "Alla fine della battaglia",
+      "description": "clicca il numero a sinistra con il countdown",
+      "image": "",
+      "link": "",
+      "linkConfirm": true
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HWS - 고급 기능</title>
+    <style>
+        body {
+            background-color: #6b6b6b;
+            margin: 0;
+            padding: 1.5rem;
+            box-sizing: border-box;
+        }
+        .container {
+            max-width: 800px;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            background-color: #e9d3b1;
+            box-sizing: border-box;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-family: Brush Script MT, cursive;
+            font-size: 55px;
+            font-weight: bold;
+            font-style: italic;
+            color: #000000;
+            word-break: break-word;
+        }
+        #installationTable {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #90b158;
+            box-sizing: border-box;
+            table-layout: auto;
+            word-break: break-word;
+        }
+        #installationTable th, #installationTable td {
+            border: none;
+            padding: 1rem;
+            vertical-align: top;
+            word-break: break-word;
+        }
+        #installationTable th {
+            text-align: center;
+            font-family: Brush Script MT, cursive;
+            font-size: 55px;
+            font-weight: bold;
+            font-style: italic;
+            color: #5e1700;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 1.5rem;
+        }
+        .image-title {
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            font-size: 2em;
+        }
+        .step-description {
+            margin-top: 0.5rem;
+            font-size: 1.2em;
+        }
+        /* Responsive: ridimensiona contenitore, testo e padding su schermi piccoli */
+        @media (max-width: 600px) {
+            .container {
+                padding: 0.5rem;
+            }
+            #installationTable th, #installationTable td {
+                padding: 0.5rem;
+                font-size: 1em;
+            }
+            h1 {
+                font-size: 1.3em !important;
+                padding: 0.5rem 0;
+            }
+            .image-title, .step-description {
+                font-size: 1em !important;
+            }
+        }
+        @media print {
+            #installationTable th, #installationTable td {
+                border: none !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>HWS - 고급 기능</h1>
+        <table id="installationTable">
+            <thead>
+                <tr>
+                    <th>일부 고급 HWS 기능은 기부를 통해 이용할 수 있습니다.</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+        <tr >
+            <td>
+                <div class="image-title" style="font-family: Brush Script MT, cursive; font-size: 52px; color: #000000; font-weight: bold; font-style: italic; text-align: center;">Hero wars simulator에 접속하기</div>
+                <div class="step-description" style="font-family: Arial, sans-serif; font-size: 32px; color: #000000; font-weight: normal; font-style: normal; text-align: center;">Hero wars simulator에 접속해 봅시다</div>
+                <img src="IMG/1.jpg" alt="Hero wars simulator에 접속하기">
+            </td>
+        </tr>
+    
+        <tr >
+            <td>
+                <div class="image-title" style="font-family: Brush Script MT, cursive; font-size: 52px; color: #000000; font-weight: bold; font-style: italic; text-align: center;">"기부하기" 버튼을 찾을 수 있습니다</div>
+                <div class="step-description" style="font-family: Arial, sans-serif; font-size: 32px; color: #000000; font-weight: normal; font-style: normal; text-align: center;">여기로 가면 됩니다</div>
+                <img src="IMG/2.jpg" alt=""기부하기" 버튼을 찾을 수 있습니다">
+            </td>
+        </tr>
+    
+        <tr >
+            <td>
+                <div class="image-title" style="font-family: Brush Script MT, cursive; font-size: 52px; color: #000000; font-weight: bold; font-style: italic; text-align: center;">기부가 가능합니다</div>
+                <div class="step-description" style="font-family: Arial, sans-serif; font-size: 32px; color: #000000; font-weight: normal; font-style: normal; text-align: center;">페이팔, 신용카드 또는 비트코인으로<br>활성화를 위해 브라우저를 재시작해야 할 수도 있습니다</div>
+                <img src="IMG/3.jpg" alt="기부가 가능합니다">
+            </td>
+        </tr>
+    
+        <tr >
+            <td>
+                <div class="image-title" style="font-family: Brush Script MT, cursive; font-size: 52px; color: #000000; font-weight: bold; font-style: italic; text-align: center;">기부가 완료되면</div>
+                <div class="step-description" style="font-family: Arial, sans-serif; font-size: 32px; color: #000000; font-weight: normal; font-style: normal; text-align: center;">크레딧이 지급됩니다</div>
+                <img src="IMG/4.jpg" alt="기부가 완료되면">
+            </td>
+        </tr>
+    
+            </tbody>
+        </table>
+        <script>
+document.querySelectorAll('tr[data-link]').forEach(row => {
+    row.style.cursor = "pointer";
+    row.addEventListener('click', function(e) {
+        const link = row.getAttribute('data-link');
+        const linkConfirm = row.getAttribute('data-linkconfirm') === 'true';
+        if (link) {
+            if (linkConfirm) {
+                if (confirm('Vuoi aprire questo link?')) {
+                    window.open(link, '_blank');
+                }
+            } else {
+                window.open(link, '_blank');
+            }
+        }
+    });
+});
+</script>
+    </div>
+</body>
+</html>

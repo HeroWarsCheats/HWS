@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HWS - funzioni avanzate</title>
+    <style>
+        body {
+            background-color: #6b6b6b;
+            margin: 0;
+            padding: 1.5rem;
+            box-sizing: border-box;
+        }
+        .container {
+            max-width: 800px;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            background-color: #e9d3b1;
+            box-sizing: border-box;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-family: Brush Script MT, cursive;
+            font-size: 55px;
+            font-weight: bold;
+            font-style: italic;
+            color: #000000;
+            word-break: break-word;
+        }
+        #installationTable {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #90b158;
+            box-sizing: border-box;
+            table-layout: auto;
+            word-break: break-word;
+        }
+        #installationTable th, #installationTable td {
+            border: none;
+            padding: 1rem;
+            vertical-align: top;
+            word-break: break-word;
+        }
+        #installationTable th {
+            text-align: center;
+            font-family: Brush Script MT, cursive;
+            font-size: 55px;
+            font-weight: bold;
+            font-style: italic;
+            color: #47362e;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 1.5rem;
+        }
+        .image-title {
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            font-size: 2em;
+        }
+        .step-description {
+            margin-top: 0.5rem;
+            font-size: 1.2em;
+        }
+        /* Responsive: ridimensiona contenitore, testo e padding su schermi piccoli */
+        @media (max-width: 600px) {
+            .container {
+                padding: 0.5rem;
+            }
+            #installationTable th, #installationTable td {
+                padding: 0.5rem;
+                font-size: 1em;
+            }
+            h1 {
+                font-size: 1.3em !important;
+                padding: 0.5rem 0;
+            }
+            .image-title, .step-description {
+                font-size: 1em !important;
+            }
+        }
+        @media print {
+            #installationTable th, #installationTable td {
+                border: none !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>HWS - funzioni avanzate</h1>
+        <table id="installationTable">
+            <thead>
+                <tr>
+                    <th>Alcune funzioni avanzate di HWS sono accessibili con delle donazioni.</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+        <tr >
+            <td>
+                <div class="image-title" style="font-family: Brush Script MT, cursive; font-size: 52px; color: #000000; font-weight: bold; font-style: italic; text-align: center;">Entriamo in Hero wars simulator</div>
+                <div class="step-description" style="font-family: Arial, sans-serif; font-size: 32px; color: #000000; font-weight: normal; font-style: normal; text-align: center;">basterà cliccare sull'estensione</div>
+                <img src="IMG/1.jpg" alt="Entriamo in Hero wars simulator">
+            </td>
+        </tr>
+    
+        <tr >
+            <td>
+                <div class="image-title" style="font-family: Brush Script MT, cursive; font-size: 52px; color: #000000; font-weight: bold; font-style: italic; text-align: center;">Troveremo un tasto " dona dei soldi "</div>
+                <div class="step-description" style="font-family: Arial, sans-serif; font-size: 32px; color: #000000; font-weight: normal; font-style: normal; text-align: center;">sarà li che dovremo andare</div>
+                <img src="IMG/2.jpg" alt="Troveremo un tasto " dona dei soldi "">
+            </td>
+        </tr>
+    
+        <tr >
+            <td>
+                <div class="image-title" style="font-family: Brush Script MT, cursive; font-size: 52px; color: #000000; font-weight: bold; font-style: italic; text-align: center;">Sarà possibile fare donazioni</div>
+                <div class="step-description" style="font-family: Arial, sans-serif; font-size: 32px; color: #000000; font-weight: normal; font-style: normal; text-align: center;">con paypal, carta di credito o bitcoin<br>Eventualmente riavvia il browser per convalitare l'attivazione</div>
+                <img src="IMG/3.jpg" alt="Sarà possibile fare donazioni">
+            </td>
+        </tr>
+    
+        <tr >
+            <td>
+                <div class="image-title" style="font-family: Brush Script MT, cursive; font-size: 52px; color: #000000; font-weight: bold; font-style: italic; text-align: center;">Una volta effettuata la fonazione</div>
+                <div class="step-description" style="font-family: Arial, sans-serif; font-size: 32px; color: #000000; font-weight: normal; font-style: normal; text-align: center;">avrai dei crediti</div>
+                <img src="IMG/4.jpg" alt="Una volta effettuata la fonazione">
+            </td>
+        </tr>
+    
+            </tbody>
+        </table>
+        <script>
+document.querySelectorAll('tr[data-link]').forEach(row => {
+    row.style.cursor = "pointer";
+    row.addEventListener('click', function(e) {
+        const link = row.getAttribute('data-link');
+        const linkConfirm = row.getAttribute('data-linkconfirm') === 'true';
+        if (link) {
+            if (linkConfirm) {
+                if (confirm('Vuoi aprire questo link?')) {
+                    window.open(link, '_blank');
+                }
+            } else {
+                window.open(link, '_blank');
+            }
+        }
+    });
+});
+</script>
+    </div>
+</body>
+</html>

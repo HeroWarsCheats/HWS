@@ -1,0 +1,108 @@
+{
+  "globalTitle": "HWS - 아스가르드 개선",
+  "globalHeading": "HWS - 아스가르드 개선",
+  "globalTableHeading": "아스가르드를 개선하는 방법을 알아봅시다",
+  "bodyBgColor": "#6b6b6b",
+  "containerBgColor": "#e9d3b1",
+  "tableBgColor": "#90b158",
+  "mainHeadingColor": "#000000",
+  "tableHeadingColor": "#5e1700",
+  "sectionTitleColor": "#000000",
+  "descriptionColor": "#000000",
+  "modalWidth": "400px",
+  "modalHeight": "600px",
+  "headingFontFamily": "Brush Script MT, cursive",
+  "descriptionFontFamily": "Arial, sans-serif",
+  "mainHeadingSize": 55,
+  "tableHeadingSize": 55,
+  "sectionTitleSize": 52,
+  "descriptionSize": 32,
+  "headingBold": true,
+  "headingItalic": true,
+  "descriptionBold": false,
+  "descriptionItalic": false,
+  "titleAlignment": "center",
+  "descriptionAlignment": "center",
+  "imageAlignment": "center",
+  "availableImages": [
+    "",
+    "1.jpg",
+    "2.jpg",
+    "3.jpg",
+    "4.jpg",
+    "5.jpg",
+    "6.jpg",
+    "7.jpg",
+    "8.jpg",
+    "1.png",
+    "2.png",
+    "3.png",
+    "4.png",
+    "5.png"
+  ],
+  "steps": [
+    {
+      "title": "Hero wars simulator에 접속하기",
+      "description": "Hero wars simulator에 접속해 봅시다",
+      "image": "1.jpg",
+      "link": "",
+      "linkConfirm": true
+    },
+    {
+      "title": "\"settings\" 항목을 찾을 수 있습니다",
+      "description": "왼쪽 열에<br>거기로 가면 됩니다",
+      "image": "2.jpg",
+      "link": "",
+      "linkConfirm": true
+    },
+    {
+      "title": "이미 \"General Settings\" 섹션에 있어야 합니다",
+      "description": "거기서 두 개의 Osh 피해 최적화 버튼을 활성화할 수 있습니다",
+      "image": "3.jpg",
+      "link": "",
+      "linkConfirm": true
+    },
+    {
+      "title": "게임으로 이동하기",
+      "description": "길드 레이드 섹션에서<br><br>Ctrl+Alt+A를 누르면 더 빨리 갈 수 있습니다",
+      "image": "4.jpg",
+      "link": "",
+      "linkConfirm": true
+    },
+    {
+      "title": "평소처럼 영웅을 선택합니다",
+      "description": "그리고 전투를 시작합니다",
+      "image": "5.jpg",
+      "link": "",
+      "linkConfirm": true
+    },
+    {
+      "title": "전투 전에 메뉴가 나타납니다",
+      "description": "얼마의 크레딧을 사용할지, 그리고 사용할 시도 횟수의 최대치를 결정할 수 있습니다.<br><br>주의! 최대 한도는 컴퓨터에 따라 달라집니다. <br>최고의 컴퓨터는 150-200회 시도에 도달합니다.",
+      "image": "6.jpg",
+      "link": "",
+      "linkConfirm": true
+    },
+    {
+      "title": "왼쪽 상단",
+      "description": "완전히 자동 전투로 얻을 수 있는 점수를 볼 수 있습니다<br><br>크레딧을 낭비하지 않도록 주의하세요!!<br><br>수동 모드로 전투를 시작한 다음 최상의 결과를 결정할 수도 있습니다.<br><br>수동 모드는 재계산 시간을 줄입니다.",
+      "image": "7.jpg",
+      "link": "",
+      "linkConfirm": true
+    },
+    {
+      "title": "전투 중에 볼 수 있습니다",
+      "description": "재계산까지 남은 시간.<br>1- 수동 전투로 입힐 피해량 (\"skip battle\"을 누를 때까지)<br>2 - 자동 전투로 얻을 점수<br>3 - 최적화로 얻은 최고의 결과<br>4 - 시도 횟수",
+      "image": "8.jpg",
+      "link": "",
+      "linkConfirm": true
+    },
+    {
+      "title": "전투가 끝나면",
+      "description": "카운트다운이 있는 왼쪽의 숫자를 클릭합니다",
+      "image": "",
+      "link": "",
+      "linkConfirm": true
+    }
+  ]
+}
