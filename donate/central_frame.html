@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Central Frame</title>
+    <style>
+        body {
+            background-color: #6b6b6b;
+            margin: 0;
+            padding: 1.5rem;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            background-color: #e9d3b1;
+            box-sizing: border-box;
+            font-family: "Brush Script MT", cursive;
+            font-weight: bold;
+            font-style: italic;
+            text-align: center;
+        }
+        .language-module {
+            margin-bottom: 20px;
+            text-decoration: none;
+            color: #000000;
+        }
+        .language-module img {
+            max-width: 100px;
+            height: auto;
+            border-radius: 1.5rem;
+        }
+        .language-text {
+            font-size: 2em;
+            margin-top: 10px;
+        }
+        /* Responsive */
+        @media (max-width: 600px) {
+            .container {
+                padding: 1rem;
+            }
+            .language-text {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="en.html" target="_self" class="language-module">
+            <img src="https://flagcdn.com/w160/gb.png" alt="English Flag">
+            <div class="language-text">Click above to choose your language</div>
+        </a>
+        <a href="es.html" target="_self" class="language-module">
+            <img src="https://flagcdn.com/w160/es.png" alt="Spanish Flag">
+            <div class="language-text">Haz clic arriba para elegir tu idioma</div>
+        </a>
+        <a href="it.html" target="_self" class="language-module">
+            <img src="https://flagcdn.com/w160/it.png" alt="Italian Flag">
+            <div class="language-text">Clicca sopra per decidere la tua lingua</div>
+        </a>
+        <a href="kr.html" target="_self" class="language-module">
+            <img src="https://flagcdn.com/w160/kr.png" alt="Korean Flag">
+            <div class="language-text">언어를 선택하려면 위를 클릭하십시오</div>
+        </a>
+        <a href="jp.html" target="_self" class="language-module">
+            <img src="https://flagcdn.com/w160/jp.png" alt="Japanese Flag">
+            <div class="language-text">言語を選択するには上をクリックしてください</div>
+        </a>
+    </div>
+</body>
+</html>
